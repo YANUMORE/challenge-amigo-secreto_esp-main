@@ -14,7 +14,9 @@
 
 - Función de sortear amigos
   - Se valida que la lista no este vacia
-
+  - Se sortean los nombres de la lista
+  - Se habilita boton para voler a sortear el amigo secreto
 - Función limpiar campo
+
 
 

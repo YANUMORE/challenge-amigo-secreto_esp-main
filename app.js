@@ -3,6 +3,7 @@
 
 let amigo = document.getElementById('amigo');
 let listAmigos = document.getElementById("listaAmigos");
+
 //Declararcion de variable para los nombres de los amigos
 let nombresAmigos = [];
 
@@ -12,15 +13,17 @@ function limpiarTexto() {
 //Vuelve a enfocar el campo de texto
        amigo.focus();
 }
+
 function agregarAmigo() {
-    let nombreNuevo = document.getElementById("amigo").value;
-   //console.log(nombresAmigos);
+   let nombreNuevo = document.getElementById("amigo").value;
+
    //Verifica que el nombre no este vacio
    if (nombreNuevo === "") {
     //Alerta si el campo esta vacio
        alert("Por favor ingresa un nombre válido");   
-       
-   return;  
+       //elementoHTML = "";
+     
+   //return;  
    } else {
       if (nombresAmigos.includes(nombreNuevo)){
          alert("El nombre ya existe, ingrese otro por favor");
@@ -28,8 +31,10 @@ function agregarAmigo() {
       limpiarTexto();
       return;
       }
+      
    //Añada el nombre al array
       nombresAmigos.push(nombreNuevo);
+      //console.log(nombreNuevo);
        //Crea un nuevo elemento a la lista de amigos
        let listaNombres = document.createElement("li");
       limpiarTexto(); 
@@ -42,14 +47,18 @@ function agregarAmigo() {
           
       }
 
+
 }
   
    
-  console.log(nombresAmigos);
+  //console.log(nombresAmigos);
 
 function sortearAmigos() {
-   if (nombresAmigos.length > 0 ){
-       let indiceAleatorio = Math.floor(Math.random() * nombresAmigos.length);
+    //console.log(nombresAmigos);
+    //nombresAmigos = [];
+
+    if (nombresAmigos.length > 0 ){
+       let indiceAleatorio = (Math.floor(Math.random() * nombresAmigos.length));
        //console.log(nombresAmigos[indiceAleatorio]);
       
       let elementoHTML =  document.getElementById("resultado");
@@ -57,26 +66,33 @@ function sortearAmigos() {
       //listAmigos.innerHTML ="";
       elementoHTML.innerHTML =  `Nuestro amigo secreto es: ${(nombresAmigos[indiceAleatorio])} `;
       
+      
       limpiarCampo();
-      
+      let boton = document.getElementById("sortear");
+      boton.innerHTML = "Volver a Sortear";
+           
 
-      } else {
-      alert("La lista esta vacia");
-      
+       } else {
+        alert("La lista esta vacia");
+        resultado.innerHTML ="";
+        let boton = document.getElementById("sortear");
+        boton.innerHTML = "Sortear amigo";
+
+               
+                    
    }
-   
    return;
+
+   
+
   function limpiarCampo() {
   listAmigos.innerHTML ="";
   nombresAmigos =[];
   nombresAmigos.innerHTML="";
-
   
- 
+     
   }
-
+  
   //console.log(nombresAmigos);
-
-
-
 }
+
