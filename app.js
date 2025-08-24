@@ -28,23 +28,20 @@ function agregarAmigo() {
       limpiarTexto();
       return;
       }
-     //Añada el nombre al array
+   //Añada el nombre al array
       nombresAmigos.push(nombreNuevo);
        //Crea un nuevo elemento a la lista de amigos
        let listaNombres = document.createElement("li");
       limpiarTexto(); 
-       //listaNombres.innerHTML=""; BORRAR
-       //nombresAmigos.forEach(amigo) BORRAR
        
-       //Establece el texto del elemento de la lista
+      //Establece el texto del elemento de la lista
       listaNombres.textContent = nombreNuevo;
        //Añade el nuevo elemento en la lista en la pagina
       listAmigos.appendChild(listaNombres);
        //Limpia el campo de texto despues de agregar
-
           
       }
-      //limpiarTexto(); BORRAR
+
 }
   
    
@@ -74,11 +71,7 @@ function sortearAmigos() {
   nombresAmigos =[];
   nombresAmigos.innerHTML="";
 
-  //nombresAmigos =[];
-  //elementoHTML.innerHTML = "";
- //let valorCaja = document.querySelector('#amigo').value='';}
-
- 
+  
  
   }
 
