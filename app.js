@@ -44,5 +44,4 @@ function agregarAmigo() {
       
 }
   
-   
-  console.log(nombresAmigos);
+   console.log(nombresAmigos);
