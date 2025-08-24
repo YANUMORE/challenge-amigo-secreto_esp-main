@@ -15,6 +15,6 @@
 - Función de sortear amigos
   - Se valida que la lista no este vacia
 
-- Función limpiara campo
+- Función limpiar campo
 
 
