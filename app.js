@@ -30,11 +30,9 @@ function agregarAmigo() {
        //Añada el nombre al array
       nombresAmigos.push(nombreNuevo);
        //Crea un nuevo elemento a la lista de amigos
-       let listaNombres = document.createElement("li");
+      let listaNombres = document.createElement("li");
       limpiarTexto(); 
-       //listaNombres.innerHTML=""; BORRAR
-       //nombresAmigos.forEach(amigo) BORRAR
-       
+              
        //Establece el texto del elemento de la lista
       listaNombres.textContent = nombreNuevo;
        //Añade el nuevo elemento en la lista en la pagina
@@ -43,7 +41,7 @@ function agregarAmigo() {
 
           
       }
-      //limpiarTexto(); BORRAR
+      
 }
   
    
