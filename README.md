@@ -11,13 +11,13 @@
   - Valida que el nombre no este en la lista
   - Añade el nombre al array
   - Va agregando los nombres a la lista
-  - Valida que la inicial del nombre sea Mayuscula
+  - Valida que la inicial del nombre sea Mayuscula.
 
 - Función de sortear amigos
   - Se valida que la lista no este vacia
   - Se sortean los nombres de la lista
   - Se habilita boton para volver a sortear el amigo secreto
-- Función limpiar campo
+- Función limpiar campo.
 
 
 
