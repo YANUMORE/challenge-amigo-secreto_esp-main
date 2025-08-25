@@ -21,12 +21,11 @@ function agregarAmigo() {
    //if nombre === true
    
    //Verifica que el nombre no este vacio
-   
-   if (nombre === "" || isNaN(nombre) === false)  {
+   if (nombre === "") {
     
     //Alerta si el campo esta vacio
     alert("Por favor ingresa un nombre válido");   
-    limpiarTexto();
+    //limpiarTexto();
      
    return;  
    } else {
@@ -98,3 +97,4 @@ function sortearAmigos() {
   
 
 }
+
