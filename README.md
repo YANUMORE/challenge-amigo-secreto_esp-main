@@ -3,24 +3,32 @@
 - DESCRIPCION:
 -   El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
 
-![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green
+  :construction: Proyecto en construcción :construction:
+  
 
-![Badge Código Generado](https://img.shields.io/badge/CÓDIGO-%20GENERADO-green
+![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
 
-- Declaración de variables 
+- Declaración de variables: 
+      - Declarar las variables para capturar los elementos del DOM
 
-- Función agregar Amigo: Validar que no este vacio y que no este repetido
+  ## :hammer:Funcionalidades del proyecto
+
+- Función agregarAmigo: 
   - Valida que haya un nombre valido
-  - Valida que el nombre no este en la lista
+  - Valida que el nombre no exista en la lista
   - Añade el nombre al array
   - Va agregando los nombres a la lista
   - Valida que la inicial del nombre sea Mayuscula.
+ 
+  - Función limpiarTexto:
+     - Limpia el campo, despues de agregar el nombre a la lista
 
-- Función de sortear amigos
+- Función de sortearAmigo
   - Se valida que la lista no este vacia
-  - Se sortean los nombres de la lista
-  - Se habilita boton para volver a sortear el amigo secreto
-- Función limpiar campo.
+  - Se sortean los nombres de los amigos
+  - Se habilita boton para volver a sortear
+    
+- Función limpiarcampo.
 
 
 
