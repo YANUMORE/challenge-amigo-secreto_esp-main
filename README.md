@@ -12,7 +12,7 @@
   ## :hammer:Funcionalidades del proyecto
 
 - Función agregarAmigo: 
-  - Valida que haya un nombre valido
+  - Valida que haya un nombre valido y que sea un string
   - Valida que el nombre no exista en la lista
   - Añade el nombre al array
   - Va agregando los nombres a la lista
