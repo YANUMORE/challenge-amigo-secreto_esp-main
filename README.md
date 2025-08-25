@@ -1,6 +1,6 @@
-<h1> Sistema de Registro</h1>
+<em> # AMIGO SECRETO </em>
 
-- Estado del Proyecto: En Construcción 
+![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
 
 - Declaración de variables 
 
