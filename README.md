@@ -30,6 +30,9 @@
   - Se habilita boton para volver a sortear
  
     ![Badge en Desarollo](https://img.shields.io/badge/STATUS-%20CULMINADO-green)
+
+    ## Autores
+    - YANUCELLY MOREIRA
   
 
 
