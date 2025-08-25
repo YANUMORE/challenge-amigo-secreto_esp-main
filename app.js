@@ -21,20 +21,17 @@ function agregarAmigo() {
    //if nombre === true
    
    //Verifica que el nombre no este vacio
-   if (nombre === "") {
+    if (nombre === "" || isNaN(nombre) === false)  {
     
     //Alerta si el campo esta vacio
     alert("Por favor ingresa un nombre válido");   
-    //limpiarTexto();
+    limpiarTexto();
      
    return;  
    } else {
-      console.log(typeof(nombre));
-      //parseInt(nombre,10);
-      console.log(isNaN(nombre));
-      if (nombresAmigos.includes(nombre)){
       
-        alert("El nombre ya existe, ingrese otro por favor");
+      if (nombresAmigos.includes(nombre)){
+      alert("El nombre ya existe, ingrese otro por favor");
       //Limpia el campo de texto despues de agregar
       limpiarTexto();
       return;
