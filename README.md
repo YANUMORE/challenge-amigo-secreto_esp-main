@@ -6,8 +6,6 @@
   :construction: Proyecto en construcción :construction:
   
 
-![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
-
 - Declaración de variables: 
       - Declarar las variables para capturar los elementos del DOM
 
@@ -26,9 +24,13 @@
 - Función de sortearAmigo
   - Se valida que la lista no este vacia
   - Se sortean los nombres de los amigos
+     
+- Función vaciarLista
+  . Se vacia la lista
   - Se habilita boton para volver a sortear
-    
-- Función limpiarcampo.
+ 
+    ![Badge en Desarollo](https://img.shields.io/badge/STATUS-%20CULMINADO-green)
+  
 
 
 
