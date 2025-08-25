@@ -25,7 +25,7 @@ function agregarAmigo() {
     alert("Por favor ingresa un nombre válido");   
     
      
-   //return;  
+   return;  
    } else {
       if (nombresAmigos.includes(nombre)){
          alert("El nombre ya existe, ingrese otro por favor");
@@ -35,17 +35,15 @@ function agregarAmigo() {
       }
       
     //Añada el nombre al array
-    //nombresAmigos.push(nombreNuevo);
       nombresAmigos.push(nombre);
     //Crea un nuevo elemento a la lista de amigos
       const listaNombres = document.createElement("li");
       limpiarTexto(); 
       //Establece el texto del elemento de la lista
-      //listaNombres.textContent = nombreNuevo;
-      listaNombres.textContent = nombre;
+       listaNombres.textContent = nombre;
        //Añade el nuevo elemento en la lista en la pagina
       listAmigos.appendChild(listaNombres);
-       //Limpia el campo de texto despues de agregar
+       
           
       }
 
@@ -55,20 +53,18 @@ function agregarAmigo() {
   //console.log(nombresAmigos);
 
 function sortearAmigos() {
-    //console.log(nombresAmigos);
-    //nombresAmigos = [];
-
+    
     if (nombresAmigos.length > 0 ){
        const indiceAleatorio = (Math.floor(Math.random() * nombresAmigos.length));
        //console.log(nombresAmigos[indiceAleatorio]);
       
        const elementoHTML =  document.getElementById("resultado");
       
-        //listAmigos.innerHTML ="";
+       
         elementoHTML.innerHTML =  `Nuestro amigo secreto es: ${(nombresAmigos[indiceAleatorio])} `;
       
       
-       limpiarCampo();
+       vaciarLista();
        const boton = document.getElementById("sortear");
        boton.innerHTML = "Volver a Sortear";
            
@@ -85,7 +81,7 @@ function sortearAmigos() {
 
 
 
-  function limpiarCampo() {
+  function vaciarLista() {
   listAmigos.innerHTML ="";
   nombresAmigos =[];
   nombresAmigos.innerHTML="";
