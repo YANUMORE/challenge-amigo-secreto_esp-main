@@ -19,7 +19,7 @@ function agregarAmigo() {
    const nombre = nombreNuevo.toUpperCase();
    
    //Verifica que el nombre no este vacio
-   if (nombre === "") {
+   if (nombre === "" || isNaN(nombre) === false)  {
     
     //Alerta si el campo esta vacio
     alert("Por favor ingresa un nombre válido");   
@@ -91,4 +91,5 @@ function sortearAmigos() {
   
 
 }
+
 
