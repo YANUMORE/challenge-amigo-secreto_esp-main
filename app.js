@@ -25,7 +25,7 @@ function agregarAmigo() {
     
     //Alerta si el campo esta vacio
     alert("Por favor ingresa un nombre válido");   
-    
+    limpiarTexto();
      
    return;  
    } else {
